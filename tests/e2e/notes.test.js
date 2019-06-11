@@ -6,7 +6,7 @@ const app = require('../../lib/app');
 
 const createNote = note => {
   return request(app)
-    .post('./api/v1/notes')
+    .post('/api/v1/notes')
     .send(note)
     .then(res => res.body);
 };
